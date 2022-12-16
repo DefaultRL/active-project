@@ -1,9 +1,9 @@
 # Serveur
 
 ```bash
-$ cd backend
-$ yarn install
-$ yarn dev
+cd backend
+yarn install
+yarn dev
 ```
 
 # Base de données
