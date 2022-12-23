@@ -7,11 +7,11 @@ import {
 } from "typeorm";
 import { ObjectId } from "mongodb";
 
-@Entity("tasks")
-class Task extends BaseEntity {
-  constructor(title: string) {
+@Entity("numbers")
+class Number extends BaseEntity {
+  constructor(value: number) {
     super();
-    this.title = title;
+    this.value = value;
     this.createdAt = new Date().getTime();
   }
 
@@ -22,7 +22,7 @@ class Task extends BaseEntity {
   createdAt: number;
 
   @Column()
-  title: string;
+  value: number;
 }
 
-export default Task;
+export default Number;

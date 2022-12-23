@@ -1,22 +1,41 @@
-# Serveur
+# Entretien Technique Active - Hugo Barbi
+
+## Prérequis pour l'installation
+
+- Docker
+- Mongodb
+- NodeJS
+
+```bash
+cd active-project
+npm i
+```
+
+## Commandes utiles de lancement ->
+
+## Serveur (NodeJS + Express)
 
 ```bash
 cd backend
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
-# Base de données
+## Base de données (Docker)
 
 ```bash
 cd backend
 docker-compose up
 ```
 
-# Front end
+## Front end (ReactJS)
 
 ```bash
-$ cd frontend
-$ yarn install
-$ yarn start
+cd frontend
+npm install
+npm start
 ```
+
+## Notes
+
+L'ajout de de nombre directement dans l'interface n'est pas fonctionnel, le backend reste fonctionnel à 100%.

@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import taskController from "./controllers/taskController";
+import numberController from "./controllers/numberController";
 
 dotenv.config();
 
@@ -11,7 +11,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-taskController(app);
+numberController(app);
 
 // app.use(ExceptionsHandler);
 

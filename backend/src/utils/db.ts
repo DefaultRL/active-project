@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-import Task from "../models/task";
+import Number from "../models/number";
 
 class Db {
   private connections: { [url: string]: DataSource } = {};
@@ -9,7 +9,7 @@ class Db {
   }
 
   async getAppDb(): Promise<DataSource> {
-    return this.getDb("localhost", "app", [Task]);
+    return this.getDb("localhost", "number-api", [Number]);
   }
 
   async getDb(url: string, database: string, entities): Promise<DataSource> {

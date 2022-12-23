@@ -1,6 +1,64 @@
 .app {
-  text-align: center;
-  .front {
-    color: red;
-  }
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 1%;
+    .front {
+        color: red;
+    }
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.delete-button {
+    background-color: red;
+    height: 100%;
+    margin-left: 167%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+
+.item-container {
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    width: 15%;
+    background-color: white;
+}
+
+.list-container {
+    margin-left: 1.5%;
+}
+
+.background--custom {
+    background: linear-gradient(90deg, #ff5e00, #ff9400, #ff3600);
+    background-size: 300% 300%;
+    animation: gradient 4s alternate infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
 }
